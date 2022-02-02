@@ -36,7 +36,8 @@ var day = [
     "5PM",
     "6PM"];
 var today = moment();
-var currentDay= $("#currentDay").addClass("hour").text(today.format("HH")).html('<span>'+day+'</span>'+'<br>'+'<br>'+'<span>'+"My Dog just farted"+'</span>');
+var currentDay= $("#container").addClass("hour").text(today.format("HH")).each(day);
+//.html('<span>'+day+'</span>'+'<br>'+'<br>'+'<span>'+"My Dog just farted"+'</span>');
 //'.add(document.getElementsByTagName("button" [day.length]))');
 for (var i = 0; i < day.length; i++) {
   // Create a new `<div>` for each ability and its text content
@@ -48,7 +49,7 @@ for (var i = 0; i < day.length; i++) {
   // Alternatively
   // var abilityEl = $("<div>" + abilities[i] + "</div>");
   // Add this new `<div>` to the abilities `<div>` container element.
-  containerV.append(XV);
+  containerV.append(XV).append('<input type=form text=""Log your task here>'+'<input type="submit" value="💾SAVE💾">');
 }
 // select all `<div>` elements on the page
 // document.querySelectorAll('div');
