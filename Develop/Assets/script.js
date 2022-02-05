@@ -10,6 +10,7 @@ $(".container").addClass("time-block SaveBtn");
 $(".lead").addClass("description");
 var containerV = $('.container');
 var titleV = $('<h1>');
+var task=[''];
 containerV.append('<h2>Availiable hours:</h2>');
 var day = [
     "8AM",
@@ -33,6 +34,25 @@ for (var i = 0; i < day.length; i++) {
   containerV.append(XV).append('<input class="time-block task-input" type="form" id="formId" placeholder="Log your task here">')
   .append('<input class="saveBtn task-input" type="submit" value="💾SAVE💾">');
 }
+/////////////working on local storage//////
+function save(){
+var text = $('.saveBtn').text();
+window.localStorage.setItem('.saveBtn', text);
+alert('Task Saved');
+(localStorage.getItem('.saveBtn'));
+};
+function load(){
+var text= $('.saveBtn').text();
+const stored = window.localStorage.getItem('saveBtn', text);
+console.log(stored);
+window.localStorage.getItem('saveBtn');
+};
+function clear(){
+    localStorage.clear();
+}
+//$('input .saveBtn').click(submit, window.localStorage.setItem(form);//(function storeSave(task){myStorage = window.localStorage.setItem(task, onclick.SubmitEvent);});
+////
+////working on local storage
 console.log($('div'&&'li'));
 console.log(today);
 console.log(currentDay);
