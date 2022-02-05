@@ -4,7 +4,7 @@ This is a schedule that will help you manage and plan your work day.!
 ![image](image1)
 
 
-https://binarybitbytes.github.io/first-day-dev/
+https://binarybitbytes.github.io/Work-Day-Schedule/
 ---
 permalink: /index.html
 ---
